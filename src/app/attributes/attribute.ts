@@ -1,4 +1,14 @@
 export class Attribute {
+  attributeId: string;
+  entityId: string;
+  entityType: EntityType = new EntityType();
+  attributeType: AttributeType = new AttributeType();
+  attributeValue: string;
+  attributeDataType: string;
+  attributeDisplayFormat: string;
+}
+
+export class AttributeType {
   attributeTypeId: string;
   attributeDataTypeKey: QIQOAttributeDataType;
   attributeDefaultFormat: string;
@@ -6,6 +16,14 @@ export class Attribute {
   attributeTypeCategory: string;
   attributeTypeName: string;
   attributeTypeDesc: string;
+}
+
+export class EntityType {
+  entityTypeId: string;
+  entityTypeCode: string;
+  entityTypeCategory: string;
+  entityTypeName: string;
+  entityTypeDesc: string;
 }
 
 export enum QIQOAttributeDataType {
