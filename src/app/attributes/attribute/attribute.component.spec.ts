@@ -1,6 +1,12 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AttributeComponent } from './attribute.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { PanelModule, InputTextModule } from 'primeng/primeng';
+import { CompanyService } from '../../companies/company.service';
 
 describe('AttributeComponent', () => {
   let component: AttributeComponent;
@@ -8,7 +14,10 @@ describe('AttributeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AttributeComponent ]
+      declarations: [ AttributeComponent ],
+      imports: [HttpClientModule, HttpClientTestingModule, ReactiveFormsModule,
+        PanelModule, InputTextModule, BrowserAnimationsModule],
+      providers: [CompanyService]
     })
     .compileComponents();
   }));
