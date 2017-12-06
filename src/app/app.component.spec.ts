@@ -3,20 +3,22 @@ import { AppComponent } from './app.component';
 import { AttributeComponent } from './attributes/attribute/attribute.component';
 import { AttributeListComponent } from './attributes/attribute-list/attribute-list.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { PanelModule, DataTableModule, ButtonModule } from 'primeng/primeng';
+import { PanelModule, DataTableModule, ButtonModule, RadioButtonModule } from 'primeng/primeng';
 import { CompanyService } from './companies/company.service';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AddressComponent } from './addresses/address/address.component';
+import { AddressListComponent } from './addresses/address-list/address-list.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent, AttributeComponent, AttributeListComponent
+        AppComponent, AttributeComponent, AttributeListComponent, AddressComponent, AddressListComponent
       ],
       imports: [ReactiveFormsModule, PanelModule, DataTableModule, ButtonModule,
-        HttpClientModule, HttpClientTestingModule, BrowserAnimationsModule],
+        HttpClientModule, HttpClientTestingModule, BrowserAnimationsModule, RadioButtonModule],
       providers: [CompanyService]
     }).compileComponents();
   }));
