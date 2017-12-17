@@ -4,9 +4,9 @@
     Welcome to the {{ title }} ({{env}})!
   </h1>
 </div>
-<!--
-<app-attribute></app-attribute>
-<app-attribute-list></app-attribute-list> -->
+
+<app-attribute *ngIf="attribute" [attribute]="attribute"></app-attribute>
+<app-attribute-list *ngIf="attributes" [attributes]="attributes"></app-attribute-list>
 
 <app-address-list *ngIf="addresses"  [addresses]="addresses"></app-address-list>
 <p>&nbsp;</p>

@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { CompanyService } from './companies/company.service';
 import { AddressModule } from '@qiqo/entity-address';
+import { AttributeModule } from '@qiqo/entity-attribute';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AddressModule } from '@qiqo/entity-address';
     HttpClientModule,
     ReactiveFormsModule,
 
-    AddressModule
+    AddressModule,
+    AttributeModule
   ],
   providers: [ CompanyService ],
   bootstrap: [AppComponent]
