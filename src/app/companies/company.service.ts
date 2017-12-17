@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { CONFIG } from '../common/config';
+import { environment } from '../../environments/environment';
 
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
@@ -12,12 +12,12 @@ export class CompanyService {
 
   getAllCompanies(): Observable<ApiResponse> {
     return this.httpClient
-      .get<ApiResponse>(`${CONFIG.baseUrls.companies}`)
+      .get<ApiResponse>(`${environment.baseUrls.companies}`)
       .map(response => response);
   }
   getCompany(id: string): Observable<ApiResponse> {
     return this.httpClient
-      .get<ApiResponse>(`${CONFIG.baseUrls.companies}/${id}`)
+      .get<ApiResponse>(`${environment.baseUrls.companies}/${id}`)
       .map(response => response);
   }
 }

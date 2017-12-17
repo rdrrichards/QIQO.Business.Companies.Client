@@ -1,8 +1,8 @@
 const baseHost = 'http://192.168.1.65:32769/api/';
 
 export const environment = {
-  production: true,
-  environmentName: 'Production',
+  production: false,
+  environmentName: 'User Acceptance Testing (UAT)',
   companyApiBaseUrl: `${baseHost}`,
   baseUrls: {
     accounts: `${baseHost}accounts`,

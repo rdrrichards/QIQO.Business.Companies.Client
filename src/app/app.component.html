@@ -1,13 +1,13 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
-    Welcome to the {{ title }}!
+    Welcome to the {{ title }} ({{env}})!
   </h1>
 </div>
-
+<!--
 <app-attribute></app-attribute>
-<app-attribute-list></app-attribute-list>
+<app-attribute-list></app-attribute-list> -->
 
-<app-address-list></app-address-list>
+<app-address-list *ngIf="addresses"  [addresses]="addresses"></app-address-list>
 <p>&nbsp;</p>
-<app-address></app-address>
+<app-address *ngIf="address" [address]="address"></app-address>

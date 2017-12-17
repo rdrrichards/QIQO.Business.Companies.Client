@@ -1,6 +1,9 @@
 const baseHost = 'http://192.168.1.65:32769/api/';
 
-export let CONFIG = {
+export const environment = {
+  production: false,
+  environmentName: 'Support',
+  companyApiBaseUrl: `${baseHost}`,
   baseUrls: {
     accounts: `${baseHost}accounts`,
     companies: `${baseHost}companies`,

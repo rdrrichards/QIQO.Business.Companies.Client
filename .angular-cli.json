@@ -27,7 +27,11 @@
       "scripts": [],
       "environmentSource": "environments/environment.ts",
       "environments": {
+        "pdev": "environments/environment.pdev.ts",
         "dev": "environments/environment.ts",
+        "qa": "environments/environment.qa.ts",
+        "uat": "environments/environment.uat.ts",
+        "support": "environments/environment.support.ts",
         "prod": "environments/environment.prod.ts"
       }
     }
@@ -58,6 +62,9 @@
   },
   "defaults": {
     "styleExt": "css",
-    "component": {}
+    "component": {},
+    "build": {
+        "preserveSymlinks": true
+    }
   }
 }
