@@ -6,8 +6,8 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { CompanyService } from './companies/company.service';
-import { AddressModule } from '@qiqo/entity-address';
-import { AttributeModule } from '@qiqo/entity-attribute';
+import { AddressModule } from '@rdrrichards/entity-address';
+import { AttributeModule } from '@rdrrichards/entity-attribute';
 
 @NgModule({
   declarations: [
