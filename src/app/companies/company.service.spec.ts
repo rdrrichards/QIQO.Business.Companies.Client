@@ -15,4 +15,8 @@ describe('CompanyService', () => {
   it('should be created', inject([CompanyService], (service: CompanyService) => {
     expect(service).toBeTruthy();
   }));
+
+  it('should getAllCompanies be truthy', inject([CompanyService], (service: CompanyService) => {
+    expect(service.getAllCompanies()).toBeTruthy();
+  }));
 });
