@@ -5,5 +5,5 @@ CALL ng update @angular/core
 CALL git commit -am "ng update to latest"
 CALL npm audit fix
 CALL git commit -am "post update commit"
-CALL ng b --prod
-CALL ng t --watch=false
+REM CALL ng b --prod
+REM CALL ng t --watch=false
