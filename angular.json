@@ -203,6 +203,41 @@
           }
         }
       }
+    },
+    "entity-attribute": {
+      "projectType": "library",
+      "root": "projects/entity-attribute",
+      "sourceRoot": "projects/entity-attribute/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/entity-attribute/tsconfig.lib.json",
+            "project": "projects/entity-attribute/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/entity-attribute/src/test.ts",
+            "tsConfig": "projects/entity-attribute/tsconfig.spec.json",
+            "karmaConfig": "projects/entity-attribute/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/entity-attribute/tsconfig.lib.json",
+              "projects/entity-attribute/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "qiqo.business.companies.client",

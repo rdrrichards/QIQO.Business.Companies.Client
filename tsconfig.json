@@ -24,6 +24,12 @@
       ],
       "entity-address/*": [
         "dist/entity-address/*"
+      ],
+      "entity-attribute": [
+        "dist/entity-attribute"
+      ],
+      "entity-attribute/*": [
+        "dist/entity-attribute/*"
       ]
     }
   }
