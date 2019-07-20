@@ -17,6 +17,14 @@
       "dom"
     ],
     "module": "esnext",
-    "baseUrl": "./"
+    "baseUrl": "./",
+    "paths": {
+      "entity-address": [
+        "dist/entity-address"
+      ],
+      "entity-address/*": [
+        "dist/entity-address/*"
+      ]
+    }
   }
 }
