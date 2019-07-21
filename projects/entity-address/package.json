@@ -4,6 +4,7 @@
   "peerDependencies": {
     "@angular/common": "^8.1.2",
     "@angular/core": "^8.1.2",
+    "@angular/forms": "^8.1.2",
     "primeng": "^8.0.0"
   }
 }

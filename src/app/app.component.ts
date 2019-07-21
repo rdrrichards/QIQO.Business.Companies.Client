@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { environment } from '../environments/environment';
 import { CompanyService } from './companies/company.service';
-import { Address } from '@rdrrichards/entity-address';
-import { Attribute } from '@rdrrichards/entity-attribute';
+import { Address } from '../../projects/entity-address/src/lib/address';
+import { Attribute } from '../../projects/entity-attribute/src/lib/attribute';
 
 @Component({
   selector: 'app-root',

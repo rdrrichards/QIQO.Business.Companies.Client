@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
-import { EntityAttributeComponent } from './entity-attribute.component';
+import { AttributeComponent } from './attribute/attribute.component';
+import { AttributeListComponent } from './attribute-list/attribute-list.component';
 
 
 
 @NgModule({
-  declarations: [EntityAttributeComponent],
+  declarations: [AttributeComponent, AttributeListComponent],
   imports: [
   ],
-  exports: [EntityAttributeComponent]
+  exports: [AttributeComponent, AttributeListComponent]
 })
 export class EntityAttributeModule { }
