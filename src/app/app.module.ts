@@ -6,7 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { CompanyService } from './companies/company.service';
-import { AddressModule } from '@rdrrichards/entity-address';
+import { EntityAddressModule } from '../../projects/entity-address/src/public-api';
 import { AttributeModule } from '@rdrrichards/entity-attribute';
 
 @NgModule({
@@ -19,7 +19,7 @@ import { AttributeModule } from '@rdrrichards/entity-attribute';
     HttpClientModule,
     ReactiveFormsModule,
 
-    AddressModule,
+    EntityAddressModule,
     AttributeModule
   ],
   providers: [ CompanyService ],

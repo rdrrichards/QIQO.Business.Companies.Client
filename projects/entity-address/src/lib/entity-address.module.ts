@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
-import { EntityAddressComponent } from './entity-address.component';
+import { AddressComponent } from './address/address.component';
+import { AddressListComponent } from './address-list/address-list.component';
 
 
 
 @NgModule({
-  declarations: [EntityAddressComponent],
+  declarations: [AddressComponent, AddressListComponent],
   imports: [
   ],
-  exports: [EntityAddressComponent]
+  exports: [AddressComponent, AddressListComponent]
 })
 export class EntityAddressModule { }
