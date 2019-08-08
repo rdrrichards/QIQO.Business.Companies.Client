@@ -8,7 +8,8 @@ import { AppComponent } from './app.component';
 import { CompanyService } from './companies/company.service';
 import { EntityAddressModule } from '../../projects/entity-address/src/public-api';
 import { EntityAttributeModule } from '../../projects/entity-attribute/src/public-api';
-import { PanelModule, RadioButtonModule } from 'primeng/primeng';
+import { PanelModule } from 'primeng/panel';
+import { RadioButtonModule } from 'primeng/radiobutton';
 
 @NgModule({
   declarations: [
