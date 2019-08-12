@@ -3,7 +3,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 
 import { AttributeListComponent } from './attribute-list.component';
-import { DataTableModule } from 'primeng/primeng';
+import { TableModule } from 'primeng/table';
 
 describe('AttributeListComponent', () => {
   let component: AttributeListComponent;
@@ -12,7 +12,7 @@ describe('AttributeListComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ AttributeListComponent ],
-      imports: [HttpClientModule, HttpClientTestingModule, DataTableModule]
+      imports: [HttpClientModule, HttpClientTestingModule, TableModule]
     })
     .compileComponents();
   }));

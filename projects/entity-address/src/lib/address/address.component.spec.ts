@@ -5,7 +5,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AddressComponent } from './address.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { PanelModule, InputTextModule, RadioButtonModule } from 'primeng/primeng';
+import { PanelModule } from 'primeng/panel';
+import { InputTextModule } from 'primeng/inputtext';
+import { RadioButtonModule } from 'primeng/radiobutton';
 
 describe('AddressComponent', () => {
   let component: AddressComponent;

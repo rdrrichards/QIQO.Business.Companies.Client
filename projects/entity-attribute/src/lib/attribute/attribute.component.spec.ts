@@ -6,7 +6,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AttributeComponent } from './attribute.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { PanelModule, InputTextModule } from 'primeng/primeng';
+import { PanelModule } from 'primeng/panel';
+import { InputTextModule } from 'primeng/inputtext';
 
 describe('AttributeComponent', () => {
   let component: AttributeComponent;

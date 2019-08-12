@@ -1,15 +1,17 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-import { AttributeComponent } from '@rdrrichards/entity-attribute';
-import { AttributeListComponent } from '@rdrrichards/entity-attribute';
+import { AttributeComponent, AttributeListComponent } from '../../projects/entity-attribute/src/public-api';
 import { ReactiveFormsModule } from '@angular/forms';
-import { PanelModule, DataTableModule, ButtonModule, RadioButtonModule } from 'primeng/primeng';
+// import { PanelModule, TableModule, ButtonModule, RadioButtonModule } from 'primeng/primeng';
+import { PanelModule } from 'primeng/panel';
+import { TableModule } from 'primeng/table';
+import { ButtonModule } from 'primeng/button';
+import { RadioButtonModule } from 'primeng/radiobutton';
 import { CompanyService } from './companies/company.service';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AddressComponent } from '@rdrrichards/entity-address';
-import { AddressListComponent } from '@rdrrichards/entity-address';
+import { AddressComponent, AddressListComponent } from '../../projects/entity-address/src/public-api';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -17,7 +19,7 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent, AttributeComponent, AttributeListComponent, AddressComponent, AddressListComponent
       ],
-      imports: [ReactiveFormsModule, PanelModule, DataTableModule, ButtonModule,
+      imports: [ReactiveFormsModule, PanelModule, TableModule, ButtonModule,
         HttpClientModule, HttpClientTestingModule, BrowserAnimationsModule, RadioButtonModule],
       providers: [CompanyService]
     }).compileComponents();
