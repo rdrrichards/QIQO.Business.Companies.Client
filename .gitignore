@@ -40,3 +40,6 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# other
+__ngcc_entry_points__.json
